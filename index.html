@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEXANDER PERALTA 0909</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <!-- --------------------------BARRA DE NAVEGACIÓN------------------ -->
+    <header data-aos="zoom-in-right">
+        <nav>
+            <div class="container">
+                <div class="fila">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/LogoAlexPeralta.png" alt="logo" class="logo"></a>
+                    </div>
+                    <ul id="menuInicial">
+                        <b>
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="#perfil">PERFIL</a></li>
+                            <li><a href="#servicios">SERVICIOS</a></li>
+                            <li><a href="#portfolio">PORTAFOLIO</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                        </b>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- ------------------------------PRESENTACIÓN----------------- -->
+        <div id="hero">
+            <div class="container">
+                <div class="fila">
+                    <div class="texto">
+                        <b>
+                            <h1>John Alexander Peralta C.</h1>
+                        </b>
+                        <h2>Tecnólogo en formación SENA <br> Analista y Desarrollador de Sistemas de Información</h2>
+                    </div>
+                    <div class="foto">
+                        <img src="img/foto_transparente.png" class="foto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fila2" class="fila2">
+
+            <a href="https://whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"><img
+                        src="img/wa.jpg" class="redes"></i></a><img />
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"><img src="img/facebook.jpg"
+                        class="redes"><img /></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"><img
+                        src="img/instagram.webp" class="redes"><img /></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"><img
+                        src="img/twitter.jpg" class="redes"><img /></i></a>
+            <a href="https://gmail.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> <img
+                    src="img/mail.jpg" class="redes"><img /></i></a>
+        </div>
+    </header>
+    <!-- ------------------------------PERFIL--------------------- -->
+    <main>
+        <div id="perfil" class="container-general">
+            <div class="container perfil">
+                <div class="perfil-col-1" data-aos="zoom-in">
+                    <h1 class="sub-title" data-aos="fade-down">PERFIL</h1>
+                    <h2 class="parrafo" data-aos="fade-up">Tecnólogo en formación SENA en Análisis y Desarrollo de Sistemas
+                        de
+                        Información.
+                        Conocimientos en Excel avanzado (Programación de macros mediante Visual Basic)
+                        optimizando
+                        tiempos de labores repetitivas. Análisis de bases de datos para elaboración y
+                        presentación
+                        de informes tendencias, proyecciones, indicadores, etc.), mediante gráficos y/o tablas
+                        dinámicas
+                    </h2>
+                    <a href="img/HV ALEXANDER PERALTA pdf.pdf" target="_blank" class="btn2" data-aos="fade-right">Ver Hoja de Vida</a>
+                </div>
+                <div class="perfil-col-2">
+                    <div id="menu" data-aos="flip-left">
+                        <a href="index.html"><img src="img/LogoAlexPeralta.png" alt="logo" class="logo"></a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img class="imgInfo" src="img/foto_transparente.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verPerfil(); -->
+                                <a class="nav-link" href="#perfil"><img class="imgInfo" src="img/perfil.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verEducacion(); -->
+                                <a class="nav-link" onclick="opentab('educacion');" href="#educacion"><img
+                                        class="imgInfo" src="img/educacion.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verExperiencia(); -->
+                                <a class="nav-link" onclick="opentab('experiencia');" href="#experiencia"><img
+                                        class="imgInfo" src="img/experiencia.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios"><img class="imgInfo" src="img/portafolio.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="opentab('habilidades');" href="#habilidades"><img
+                                        class="imgInfo" src="img/habildades.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto"><img class="imgInfo" src="img/cantactanos.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="perfil-col-3" data-aos="fade-right">
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                    </div>
+
+                    <div class="tab-contents" id="experiencia">
+                        <ul>
+                            <li><span>ACTIVIDAD SENA</span> <br>Página web Figuras y Avatar</li>
+                            <li><span>NIVELACION SENA</span> <br>Página web Turismo</i>
+                            <li><span>PROYECTO TIENDA</span> <br>Página venta de aviones</i>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educacion">
+                        <ul>
+                            <li><span>SENA</span><br>Análisis y Desarrollo de Sistemas de Información - 2022</i>
+                            <li><span>UNAD</span> <br>Ingeniería Industrial - 2016</i>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- -------------------- PORTAFOLIO ---------------------- -->
+        <div id="servicios" class="container-general">
+            <div class="container perfil">
+                <div class="perfil-col-1" data-aos="zoom-in-left">
+                    <h1 class="sub-title">PORTAFOLIO</h1>
+                    <div class="fondoPortafolio">
+                        <a href="https://alexitope.github.io/Figuras_Y_Avatar/" target="_blank">
+                            <img src="img/figurasAvatar.png" class="imgPortafolio"></a>
+                        <a href="https://alexitope.github.io/Algoritmos_JS/" target="_blank"><img
+                                src="img/algoritmos.png" class="imgPortafolio"></a>
+                        <a href="https://alexitope.github.io/Nivelacion_Alex_Peralta_2429721A/" target="_blank"><img
+                                src="img/turismo.png" class="imgPortafolio"></a>
+                    </div>
+                </div>
+                <div class="perfil-col-2">
+                    <div id="menu" data-aos="flip-left">
+                        <a href="index.html"><img src="img/LogoAlexPeralta.png" alt="logo" class="logo"></a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img class="imgInfo" src="img/foto_transparente.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verPerfil(); -->
+                                <a class="nav-link" href="#perfil"><img class="imgInfo" src="img/perfil.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verEducacion(); -->
+                                <a class="nav-link" onclick="opentab('educacion');" href="#educacion"><img
+                                        class="imgInfo" src="img/educacion.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verExperiencia(); -->
+                                <a class="nav-link" onclick="opentab('experiencia');" href="#experiencia"><img
+                                        class="imgInfo" src="img/experiencia.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios"><img class="imgInfo" src="img/portafolio.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="opentab('habilidades');" href="#habilidades"><img
+                                        class="imgInfo" src="img/habildades.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto"><img class="imgInfo" src="img/cantactanos.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="perfil-col-3" data-aos="zoom-in-down">
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('habilidades')">Habilidades</p>
+                    </div>
+
+                    <div class="tab-contents" id="habilidades">
+                        <img src="img/habilidades_porcentaje.png" style="width: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacto" class="container-general">
+            <div class="container perfil">
+                <div class="perfil-col-1" data-aos="flip-up">
+                    <h1 class="sub-title">REDES</h1>
+                    <div id="filaRedes" class="filaRedes">
+                        <a href="https://whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp">
+                                <img src="img/wa.jpg" class="redes2"><img /></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"><img
+                                    src="img/facebook.jpg" class="redes2"><img /></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"><img
+                                    src="img/instagram.webp" class="redes2"><img /></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"><img
+                                    src="img/twitter.jpg" class="redes2"><img /></i></a>
+                        <a href="https://gmail.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> <img
+                                src="img/mail.jpg" class="redes2"><img /></i></a>
+                    </div>
+                </div>
+                <div class="perfil-col-2">
+                    <div id="menu" data-aos="flip-left">
+                        <a href="index.html"><img src="img/LogoAlexPeralta.png" alt="logo" class="logo"></a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img class="imgInfo" src="img/foto_transparente.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verPerfil(); -->
+                                <a class="nav-link" href="#perfil"><img class="imgInfo" src="img/perfil.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verEducacion(); -->
+                                <a class="nav-link" onclick="opentab('educacion');" href="#educacion"><img
+                                        class="imgInfo" src="img/educacion.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Se ejecuta la función de JavaScript verExperiencia(); -->
+                                <a class="nav-link" onclick="opentab('experiencia');" href="#experiencia"><img
+                                        class="imgInfo" src="img/experiencia.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios"><img class="imgInfo" src="img/portafolio.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="opentab('habilidades');" href="#habilidades"><img
+                                        class="imgInfo" src="img/habildades.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto"><img class="imgInfo" src="img/cantactanos.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="perfil-col-3" data-aos="zoom-in">
+                    <h1 class="sub-title">CONTÁCTAME</h1>
+                    <div class="contacto-right">
+                        <form action="">
+                            <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                            <input type="email" name="Email" placeholder="Tu Email" required>
+                            <textarea name="Message" rows="6" placeholder="Tu Mensaje" required></textarea>
+                            <button type="submit" class="btn btn2">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer data-aos="zoom-in-up">
+        <div class="copyright">
+            <p>@copyright <i class="fa-solid fa-copyright"></i> Alexander Peralta <br> SENA - ADSI</p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
