@@ -79,6 +79,7 @@ header {
     background-size: cover;
     transform: inherit;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .foto {
